@@ -35,14 +35,17 @@ Build a functioning Weather app using the [Open Weather API](http://openweatherm
  - [x] Move your HelloWorld component to a Home.jsx file (I have mine located in a containers folder)
  - [x] Set up your route configuration file to activate the Home component whenever a user hits the index '/' path of your app.
  - [x] Now instead of rendering <Home /> to the DOM, render your routes configuration.
+ - [x] Add a basic Navbar with atleast two routes and distinguish active route.
 
 ## Step 3: Add UI for Home (tag - `step3`)
 
- - [ ] Create a Home component and set it to the IndexRoute in your route configuration.
- - [ ] At this point when you go to localhost:8080 you should see any UI the Main component spits out as well as any UI the Home component spits out.
- - [ ] Add the full page background image to the Home component as well as the input field and button. At this point, my app looks like this.
+ - [x] Create a Home component and set it to the IndexRoute in your route configuration.
+ - [x] At this point when you go to localhost:8080 you should see any UI the Main component spits out as well as any UI the Home component spits out.
+ - [x] Add the full page background image to the Home component as well as the input field and button. At this point, my app looks like this.
 
-<img src="https://cloud.githubusercontent.com/assets/2933430/21000915/af4fef50-bcda-11e6-97ea-c4fd2615af5b.png" width="400">
+App looking like this after Step3 Completion.
+
+<img src="https://cloud.githubusercontent.com/assets/3653345/25063256/0c52d726-21fd-11e7-8d4f-840c3c1972b9.png">
 
 ## Step 4: ADD UI for Header (tag - `step4`)
 
