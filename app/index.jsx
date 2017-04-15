@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-const HelloWorld = () => (
-  <h1>Weathers</h1>
-);
+import Routes from './Routes';
 
 ReactDOM.render(
-  <HelloWorld />,
+  <Routes />,
   document.getElementById('app')
 );

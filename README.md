@@ -32,9 +32,9 @@ Build a functioning Weather app using the [Open Weather API](http://openweatherm
 
 ## Step 2: Let React Router handle Routing (tag - `step2`)
 
- - [ ] Move your HelloWorld component to a Main.js file (I have mine located in a containers folder)
- - [ ] Set up your route configuration file to activate the Main component whenever a user hits the index '/' path of your app.
- - [ ] Now instead of rendering <HelloWorld /> to the DOM, render your routes configuration.
+ - [x] Move your HelloWorld component to a Home.jsx file (I have mine located in a containers folder)
+ - [x] Set up your route configuration file to activate the Home component whenever a user hits the index '/' path of your app.
+ - [x] Now instead of rendering <Home /> to the DOM, render your routes configuration.
 
 ## Step 3: Add UI for Home (tag - `step3`)
 
