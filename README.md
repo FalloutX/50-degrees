@@ -18,9 +18,9 @@ Build a functioning Weather app using the [Open Weather API](http://openweatherm
 
 ## Step 1: Set up a HelloWorld Component (tag - `step1`)
 
- - [ ] npm install the dependencies you'll need
+ - [x] npm install the dependencies you'll need
  - [ ]  Create and configure your webpack.config.js file
- - [ ] Add your babel settings to your package.json file
+ - [x] Add your babel settings to your package.json file
  - [ ]  In your app directory create and configure your index.html file
  - [ ] In your app directory create and add a style to your index.css file
  - [ ] In your app directory create and configure your index.js file to render a HelloWorld component including your stylesheet.
