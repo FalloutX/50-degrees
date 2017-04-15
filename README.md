@@ -71,7 +71,7 @@ App Status after Step5 Completion. Console is also opened.
 
 ![Step 5 Completed](https://cloud.githubusercontent.com/assets/3653345/25064263/912f9b5c-2214-11e7-8ff7-d0ebd3850a0d.png)
 
-## Step 6: New /forecast route
+## Step 6: New /forecast route (tag - `step6`)
  - [x]  Add a new Route to your route config of 'forecast/:city'.
  - [x]  Create the component(s) that will become active when the user goes to /forecast/SOME-CITY
  - [x] Now make it so instead of calling the weather API when we click on the "Get Weather" button, go to this /forecast route we just created.
@@ -80,13 +80,15 @@ App Status after Step5 Completion. Console is also opened.
 Empty Forecast component
 <img src="https://cloud.githubusercontent.com/assets/2933430/21000852/3c9a0e50-bcda-11e6-82ae-eba38356eaa0.png" width="400">
 
-## Step 7: Make /forecast show loading and fetch
+## Step 7: Make /forecast show loading and fetch (tag - `step7`)
 Before we had our API request when the user clicked on the "Get Weather" button. However, in Step 6 we removed that and are instead routing to the /forecast route. Now what we need to do it when someone reaches the /forecast route, show a loading indicator while the component fetches the city data from the weather API.
 
- - [ ] When someone goes to /forecast, have that component that becomes active fetch the forecast for the specific city which should probably be a route parameter.
- - [ ] Also make it so this component initially renders "Loading" while the request to the weather API is being made.
- - [ ] When the request comes back, console.log that data and set loading to false.
- - [ ] By this point when your user goes to /forecast, they should see a loading screen then when the loading screen goes away they should see the forecast data in the console.
+ - [x] When someone goes to /forecast, have that component that becomes active fetch the forecast for the specific city which should probably be a route parameter.
+ - [x] Also make it so this component initially renders "Loading" while the request to the weather API is being made.
+ - [x] When the request comes back, console.log that data and set loading to false.
+ - [x] By this point when your user goes to /forecast, they should see a loading screen then when the loading screen goes away they should see the forecast data in the console.
+<!-- TODO: Add Image for Step 7. -->
+
 
 ## Step 8: Finish the UI for /forecast
  - [ ] At this point the component that becomes active when a user navigates to /forecast should have all the data it needs to render properly. So, make that UI look nice.
