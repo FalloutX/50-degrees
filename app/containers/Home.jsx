@@ -1,20 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
-
-const WeatherForm = ({ className }) => (
-  <form className={className}>
-    <h3 className="form-legend">Enter a City or a State</h3>
-
-    <input type="text" placeholder="Eg: St.George, Utah"/>
-
-    <button type="submit" className="button">Get Weather</button>
-  </form>
-);
-
-WeatherForm.propTypes = {
-  className: string
-};
-
+import WeatherForm from '../components/WeatherForm';
 
 const Home = () => (
   <div className="page-container">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import WeatherForm from './WeatherForm';
 
 const NavBar = () => (
   <div className="navbar">
@@ -18,11 +19,9 @@ const NavBar = () => (
       </li>
     </ul>
     <div className="navbar-form-container">
-      <form className="navbar-form">
-        <input type="text" placeholder="Eg: St.George, Utah"/>
-
-        <button type="submit" className="button is-small">Get Weather</button>
-      </form>
+      <WeatherForm isSmall
+        className="navbar-form"
+        />
     </div>
   </div>
 );
