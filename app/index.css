@@ -54,6 +54,8 @@ ul.nav li {
   background: #333;
   box-shadow: 0px 0px 10px 5px rgba(40, 40, 40, 0.6);
   padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
 }
 .page-container {
   padding: 0px 25px;
@@ -68,6 +70,11 @@ ul.nav li {
   font-size: 1.15em;
   text-decoration: none;
   color: #f8f8f8;
+}
+
+.navbar-form-container {
+  display: flex;
+  align-items: center;
 }
 
 ul.nav li:hover {
@@ -99,12 +106,14 @@ ul.nav li:hover {
   margin: 10px 0px;
 }
 
-.column input[type="text"] {
+input[type="text"] {
   background-color: #333;
   border: 2px solid rgba(127, 127, 127, 0.4);
   border-radius: 3px;
   color: #fff;
+  min-width: 250px;
 }
+
 
 .weather-form.column input[type="text"] {
   width: 600px;
@@ -112,12 +121,20 @@ ul.nav li:hover {
   line-height: 1.5em;
   font-size: 1.3em;
 }
-.column input[type="text"]::placeholder {
+.navbar-form * {
+  margin-left: 15px;
+}
+.navbar-form input[type="text"] {
+  height: 2.0em;
+  font-size: 0.7em;
+}
+
+input[type="text"]::placeholder {
   color: #c7c7c7;
 }
 
 
-.column input[type="text"]:focus {
+input[type="text"]:focus {
   outline: 2px solid #f73350;
   border-radius: 4px;
 }
@@ -133,6 +150,12 @@ ul.nav li:hover {
   text-transform: uppercase;
   box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.4);
   transition: 0.3s box-shadow ease;
+}
+
+.button.is-small {
+  font-size: 0.70em;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  padding: 8px 14px;
 }
 
 button:disabled {

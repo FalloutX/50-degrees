@@ -17,6 +17,13 @@ const NavBar = () => (
         </NavLink>
       </li>
     </ul>
+    <div className="navbar-form-container">
+      <form className="navbar-form">
+        <input type="text" placeholder="Eg: St.George, Utah"/>
+
+        <button type="submit" className="button is-small">Get Weather</button>
+      </form>
+    </div>
   </div>
 );
 

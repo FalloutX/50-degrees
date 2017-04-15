@@ -49,12 +49,13 @@ App looking like this after Step3 Completion.
 
 ## Step 4: ADD UI for Header (tag - `step4`)
 
- - [ ] Finish the UI for the Header component.
- - [ ] As of right now, my app looks like this (with no actual functionality)
+ - [x] Finish the UI for the Header component.
 
-<img src="https://cloud.githubusercontent.com/assets/2933430/21000851/3c99be96-bcda-11e6-8dd9-0812bd769229.png" width="400">
+App looking like this after Step4 Completion.
 
-## Step 5: Wire up the Weather Button (tag - `step4`)
+<img src="https://cloud.githubusercontent.com/assets/3653345/25063604/b99550cc-2206-11e7-9285-23b4bf5691cb.png">
+
+## Step 5: Wire up the Weather Button (tag - `step5`)
 In this step we're going to write up the button to our weather API, though we'll just log the result from now.
 
  - [ ] Wire up your button (mine says "Get Weather") to log whatever is in the input field when the button is clicked.

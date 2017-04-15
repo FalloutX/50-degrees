@@ -1,4 +1,20 @@
 import React from 'react';
+import { string } from 'prop-types';
+
+const WeatherForm = ({ className }) => (
+  <form className={className}>
+    <h3 className="form-legend">Enter a City or a State</h3>
+
+    <input type="text" placeholder="Eg: St.George, Utah"/>
+
+    <button type="submit" className="button">Get Weather</button>
+  </form>
+);
+
+WeatherForm.propTypes = {
+  className: string
+};
+
 
 const Home = () => (
   <div className="page-container">
@@ -9,13 +25,8 @@ const Home = () => (
     </header>
 
     <div className="page-content row">
-      <form className="weather-form column is-centered is-centered-v">
-        <h3 className="form-legend">Enter a City or a State</h3>
-
-        <input type="text" placeholder="Eg: St.George, Utah"/>
-
-        <button type="submit" className="button">Get Weather</button>
-      </form>
+      <WeatherForm className="weather-form column is-centered is-centered-v"
+        headerText="Enter a City or a State"/>
     </div>
   </div>
 );
