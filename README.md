@@ -23,8 +23,10 @@ Build a functioning Weather app using the [Open Weather API](http://openweatherm
  - [x]  In your app directory create and configure your index.html file
  - [x] In your app directory create and add a style to your index.css file
  - [x] In your app directory create and configure your index.js file to render a HelloWorld component including your stylesheet.
- - [ ]  Create and configure your webpack.config.js file
- - [ ] Start webpack and make sure everything is working
+ - [x]  Create and configure your webpack.config.js file
+ - [x] Start webpack and make sure everything is working
+ - [x] Add webpack commands as node package.json scripts.  
+ - [x] Add eslint for linting.
 
 
 

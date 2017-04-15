@@ -1,0 +1,13 @@
+{
+  "extends": ["react"],
+  "rules": {
+    "jsx-quotes": ["error", "prefer-double"],
+    "indent": ["error", 2],
+  },
+  "globals": {
+    "console": true,
+    "document": true,
+    "Promise": true,
+    "window": true
+  }
+}

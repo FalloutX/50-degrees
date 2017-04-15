@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../index.css';
+import './index.css';
 
 const HelloWorld = () => (
   <h1>Weathers</h1>
