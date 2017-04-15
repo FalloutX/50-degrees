@@ -1,6 +1,5 @@
 import React from 'react';
 import { string, bool, object } from 'prop-types';
-import api from '../utils/api';
 
 export default class WeatherForm extends React.Component {
   constructor (props) {

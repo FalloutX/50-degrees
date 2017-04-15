@@ -15,7 +15,7 @@ let config = {
     rules: [
       { test: /\.jsx?$/, use: 'babel-loader' },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      { test: /\.png$/, use: 'file-loader' }
+      { test: /\.(png|svg|jpg|jpeg)$/, use: 'file-loader' }
     ]
   },
   devServer: {

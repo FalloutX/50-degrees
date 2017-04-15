@@ -78,7 +78,8 @@ App Status after Step5 Completion. Console is also opened.
 
 <!-- TODO: Change this Image. -->
 Empty Forecast component
-<img src="https://cloud.githubusercontent.com/assets/2933430/21000852/3c9a0e50-bcda-11e6-82ae-eba38356eaa0.png" width="400">
+![Step 6 Completed](https://cloud.githubusercontent.com/assets/3653345/25066916/7aa9c3f2-2251-11e7-98c0-f31a85422d74.png)
+
 
 ## Step 7: Make /forecast show loading and fetch (tag - `step7`)
 Before we had our API request when the user clicked on the "Get Weather" button. However, in Step 6 we removed that and are instead routing to the /forecast route. Now what we need to do it when someone reaches the /forecast route, show a loading indicator while the component fetches the city data from the weather API.
@@ -87,13 +88,15 @@ Before we had our API request when the user clicked on the "Get Weather" button.
  - [x] Also make it so this component initially renders "Loading" while the request to the weather API is being made.
  - [x] When the request comes back, console.log that data and set loading to false.
  - [x] By this point when your user goes to /forecast, they should see a loading screen then when the loading screen goes away they should see the forecast data in the console.
-<!-- TODO: Add Image for Step 7. -->
 
+![Step 7 Completed](https://cloud.githubusercontent.com/assets/3653345/25067249/15393eb2-225b-11e7-886b-8673c1fbe79c.png)
 
 ## Step 8: Finish the UI for /forecast
- - [ ] At this point the component that becomes active when a user navigates to /forecast should have all the data it needs to render properly. So, make that UI look nice.
- - [ ] As of right now, my app looks like this
+ - [x] At this point the component that becomes active when a user navigates to /forecast should have all the data it needs to render properly. So, make that UI look nice.
 
+- As of right now, The App looks like this
+
+<!-- TODO: Add Image for Step 8. -->
 <img src="https://cloud.githubusercontent.com/assets/2933430/21000853/3c9b2bbe-bcda-11e6-88b8-3619aa319bcd.png" width="400">
 
 ## Step 9: Make each day clickable
