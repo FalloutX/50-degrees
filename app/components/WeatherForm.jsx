@@ -1,5 +1,6 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
+import api from '../utils/api';
 
 export default class WeatherForm extends React.Component {
   constructor (props) {
@@ -14,7 +15,15 @@ export default class WeatherForm extends React.Component {
 
   handleSubmit (event) {
     event.preventDefault();
-    console.log(this.state.place);
+    const { place } = this.state;
+    api.getWeather(place)
+      .then(data => {
+        console.log("Weather =>", data);
+      });
+    api.getDailyForecast(place, 5)
+      .then(data => {
+        console.log("5 Day Forecast =>", data);
+      });
   }
 
   handleChange (event) {

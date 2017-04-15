@@ -58,15 +58,18 @@ App looking like this after Step4 Completion.
 ## Step 5: Wire up the Weather Button (tag - `step5`)
 In this step we're going to write up the button to our weather API, though we'll just log the result from now.
 
- - [ ] Wire up your button (mine says "Get Weather") to log whatever is in the input field when the button is clicked.
- - [ ] With the API key we're using, you don't need an API key, but you're going to get rate limited pretty quick. It's free and probably worth it. For more info [click here](http://openweathermap.org/appid).
- -[ ] We're going to be querying the weather API for two types of data. A specific city's current weather, and the 5 day forecast for a specific city.
- - [ ] Those two endpoints are,
+ - [x] Wire up your button (mine says "Get Weather") to log whatever is in the input field when the button is clicked.
+ - [x] Get Free Open Weather Map api key and use it for your requests. To Know More  [click here](http://openweathermap.org/appid).
+ - [x] We're going to be querying the weather API for two types of data. A specific city's current weather, and the 5 day forecast for a specific city.
+ - Those two endpoints are,
       Current Weather: http://api.openweathermap.org/data/2.5/weather?q=CITY-NAME&type=accurate&APPID=YOUR-API-KEY
       5 Day Forecast: http://api.openweathermap.org/data/2.5/forecast/daily?q=CITY-NAME&type=accurate&APPID=YOUR-API-KEY&cnt=5
- - [ ] Tie up the "Get Weather" button to be able to grab the city's current weather and log it to the console.
- - [ ]  Once the previous step is working, also create the functionality for the 5 day forecast request and test is by hooking it up to the "Get Weather" button. Once it works, change it back to get the current weather.
+ - [x] Tie up the "Get Weather" button to be able to grab the city's current weather and log it to the console.
+ - [x] Once the previous step is working, also create the functionality for the 5 day forecast request and test is by hooking it up to the "Get Weather" button. Once it works, change it back to get the current weather.
 
+App Status after Step5 Completion. Console is also opened.
+
+![Step 5 Completed](https://cloud.githubusercontent.com/assets/3653345/25064263/912f9b5c-2214-11e7-8ff7-d0ebd3850a0d.png)
 
 ## Step 6: New /forecast route
  - [ ]  Add a new Route to your route config of 'forecast/:city'.
