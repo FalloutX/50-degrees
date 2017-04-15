@@ -72,11 +72,12 @@ App Status after Step5 Completion. Console is also opened.
 ![Step 5 Completed](https://cloud.githubusercontent.com/assets/3653345/25064263/912f9b5c-2214-11e7-8ff7-d0ebd3850a0d.png)
 
 ## Step 6: New /forecast route
- - [ ]  Add a new Route to your route config of 'forecast/:city'.
- - [ ]  Create the component(s) that will become active when the user goes to /forecast/SOME-CITY
- - [ ] Now make it so instead of calling the weather API when we click on the "Get Weather" button, go to this /forecast route we just created.
- - [ ] As of right now, my app looks like this
+ - [x]  Add a new Route to your route config of 'forecast/:city'.
+ - [x]  Create the component(s) that will become active when the user goes to /forecast/SOME-CITY
+ - [x] Now make it so instead of calling the weather API when we click on the "Get Weather" button, go to this /forecast route we just created.
 
+<!-- TODO: Change this Image. -->
+Empty Forecast component
 <img src="https://cloud.githubusercontent.com/assets/2933430/21000852/3c9a0e50-bcda-11e6-82ae-eba38356eaa0.png" width="400">
 
 ## Step 7: Make /forecast show loading and fetch
