@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Libre+Franklin:400,600');
+body {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Karla', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 700;
+}
+
+p, div {
+  font-family: 'Libre Franklin', 'Georgia', serif;
+  font-size: 1.0875em;
+}
+
+ul {
+  padding: 0
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.1em
+}
