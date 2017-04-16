@@ -96,17 +96,19 @@ Before we had our API request when the user clicked on the "Get Weather" button.
 
 - As of right now, The App looks like this
 
-<!-- TODO: Add Image for Step 8. -->
-<img src="https://cloud.githubusercontent.com/assets/2933430/21000853/3c9b2bbe-bcda-11e6-88b8-3619aa319bcd.png" width="400">
+![Step 8 Completed](https://cloud.githubusercontent.com/assets/3653345/25074846/23d1e2d0-2323-11e7-9531-041fd006827f.png)
+
 
 ## Step 9: Make each day clickable
 Now we want to make it so you can click on a specific day and we'll be taken to a new route which displays that day's weather information more in depth.
- - [ ] Create a new /detail/SOME-CITY route
- - [ ] Create the component(s) that are going to be active when that route is matched.
- - [ ] Add a click handler to every day that when clicked, will go to the new /detail/SOME-CITY route passing through that specific days data through as state.
- - [ ] At this point you should have a new route that looks something like this
+ - [x] Create a new /detail/SOME-CITY route
+ - [x] Create the component(s) that are going to be active when that route is matched.
+ - [x] Add a click handler to every day that when clicked, will go to the new /detail/SOME-CITY route passing through that specific days data through as state.
 
-<img src="https://cloud.githubusercontent.com/assets/2933430/21000855/3c9e3660-bcda-11e6-8f0e-4fc7d26306a7.png" width="400">
+- As of right now, The new detail route is empty
+
+![Step 9 Completed](https://cloud.githubusercontent.com/assets/3653345/25075144/fc8cc8f4-232a-11e7-9a5e-c52ebf494642.png)
+
 
 ## Step 10: Finish the UI for the /detail route
 At this point the /detail route should have all the data it needs to render.

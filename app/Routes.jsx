@@ -1,20 +1,27 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Home from './containers/Home';
 import Forecast from './containers/Forecast';
+import Detail from './containers/Detail';
 
 
 const Routes = () => (
   <Router>
     <div className="container">
       <NavBar />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/forecast/:city" component={Forecast} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/forecast/:city" component={Forecast} />
+        <Route path="/detail/:city" component={Detail} />
+        <Route component={Home} />
+      </Switch>
+
 
     </div>
   </Router>

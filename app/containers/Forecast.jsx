@@ -1,5 +1,5 @@
 import React from 'react';
-import { object, string } from 'prop-types';
+import { object, string, func } from 'prop-types';
 import api from '../utils/api';
 import date from '../utils/date';
 
@@ -22,10 +22,12 @@ const ErrorBox = ({ message }) => (
 ErrorBox.propTypes = {
   message: string
 };
-const ForecastItem = ({ forecast }) => {
+
+
+const ForecastItem = ({ forecast, onForecastClick }) => {
   const { dt, weather } = forecast;
   return (
-    <div className="forecast-item">
+    <div className="forecast-item" onClick={onForecastClick}>
       <div className="forecast-icon">
         <img
           src={`/app/static/weather-icons/${weather[0].icon}.svg`}
@@ -42,7 +44,8 @@ const ForecastItem = ({ forecast }) => {
 };
 
 ForecastItem.propTypes = {
-  forecast: object
+  forecast: object,
+  onForecastClick: func
 };
 
 
@@ -55,6 +58,8 @@ export default class Forecast extends React.Component {
       error: null,
       forecasts: null
     };
+
+    this.handleForecastClick = this.handleForecastClick.bind(this);
   }
 
   componentDidMount () {
@@ -75,6 +80,13 @@ export default class Forecast extends React.Component {
         }));
       });
   }
+
+  handleForecastClick (forecast) {
+    const { match: { params: { city } } } = this.props;
+    const { router: { history } } = this.context;
+    history.push(`/detail/${city}`, forecast);
+  }
+
   render () {
     const { match: { params: { city } } } = this.props;
     const { loading, forecasts, error } = this.state;
@@ -90,7 +102,10 @@ export default class Forecast extends React.Component {
           {error && <ErrorBox message={error}/>}
 
           <div className="forecasts-container">
-            {forecasts && forecasts.map(f => <ForecastItem forecast={f} key={f.dt}/>)}
+            {forecasts && forecasts.map(f => (
+              <ForecastItem forecast={f} key={f.dt}
+                onForecastClick={this.handleForecastClick.bind(null, f)}/>
+            ))}
           </div>
         </div>
       </div>
@@ -101,4 +116,8 @@ export default class Forecast extends React.Component {
 
 Forecast.propTypes = {
   match: object
+};
+
+Forecast.contextTypes = {
+  router: object
 };
