@@ -14,6 +14,15 @@ body {
   color: #f8f8f8;
 }
 
+a {
+  text-decoration: none;
+  color: #F25292;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #f73350;
+}
 
 
 /* Loading Animation */
@@ -287,4 +296,34 @@ button:disabled {
   text-align: center;
   font-family: 'Karla', 'Helvetica Neue', 'Helvetica', sans-serif;
 
+}
+
+.forecast-detail {
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.forecast-detail > * {
+  width: 45%;
+}
+
+.forecast-detail > .forecast-icon {
+  width: 20%;
+}
+
+.forecast-text {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 12px;
+  font-family: 'Karla', 'Helvetica Neue', 'Helvetica', sans-serif;
+  color: #d3d3d3;
+  font-size: 0.875em;
+}
+
+.link-homepage {
+  padding: 50px 0px;
+  text-align: center;
 }

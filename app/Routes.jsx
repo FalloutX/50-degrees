@@ -9,6 +9,7 @@ import NavBar from './components/NavBar';
 import Home from './containers/Home';
 import Forecast from './containers/Forecast';
 import Detail from './containers/Detail';
+import NotFound from './containers/NotFound';
 
 
 const Routes = () => (
@@ -19,7 +20,7 @@ const Routes = () => (
         <Route exact path="/" component={Home} />
         <Route path="/forecast/:city" component={Forecast} />
         <Route path="/detail/:city" component={Detail} />
-        <Route component={Home} />
+        <Route component={NotFound} />
       </Switch>
 
 
