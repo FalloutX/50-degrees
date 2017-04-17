@@ -23,7 +23,7 @@ Build a functioning Weather app using the [Open Weather API](http://openweatherm
  - [x]  In your app directory create and configure your index.html file
  - [x] In your app directory create and add a style to your index.css file
  - [x] In your app directory create and configure your index.js file to render a HelloWorld component including your stylesheet.
- - [x]  Create and configure your webpack.config.js file
+ - [x] Create and configure your webpack.config.js file
  - [x] Start webpack and make sure everything is working
  - [x] Add webpack commands as node package.json scripts.  
  - [x] Add eslint for linting.
@@ -91,7 +91,7 @@ Before we had our API request when the user clicked on the "Get Weather" button.
 
 ![Step 7 Completed](https://cloud.githubusercontent.com/assets/3653345/25067249/15393eb2-225b-11e7-886b-8673c1fbe79c.png)
 
-## Step 8: Finish the UI for /forecast
+## Step 8: Finish the UI for /forecast (tag - `step8`)
  - [x] At this point the component that becomes active when a user navigates to /forecast should have all the data it needs to render properly. So, make that UI look nice.
 
 - As of right now, The App looks like this
@@ -99,7 +99,7 @@ Before we had our API request when the user clicked on the "Get Weather" button.
 ![Step 8 Completed](https://cloud.githubusercontent.com/assets/3653345/25074846/23d1e2d0-2323-11e7-9531-041fd006827f.png)
 
 
-## Step 9: Make each day clickable
+## Step 9: Make each day clickable (tag - `step9`)
 Now we want to make it so you can click on a specific day and we'll be taken to a new route which displays that day's weather information more in depth.
  - [x] Create a new /detail/SOME-CITY route
  - [x] Create the component(s) that are going to be active when that route is matched.
@@ -110,10 +110,15 @@ Now we want to make it so you can click on a specific day and we'll be taken to 
 ![Step 9 Completed](https://cloud.githubusercontent.com/assets/3653345/25075144/fc8cc8f4-232a-11e7-9a5e-c52ebf494642.png)
 
 
-## Step 10: Finish the UI for the /detail route
+## Step 10: Finish the UI for the /detail route (tag - `step10`)
 At this point the /detail route should have all the data it needs to render.
 
  - [x] Finish the app by finishing the UI for the /detail route.
 
 The final /detail route looks like this.
 ![Step 10 Completed](https://cloud.githubusercontent.com/assets/3653345/25082942/81f00cfe-2371-11e7-83aa-10fac8d26507.png)
+
+## Step 11: Build for production and host it
+
+- [ ] Configure your webpack.config.js settings to build for production.
+- [ ] Host your app.
