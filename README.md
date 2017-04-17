@@ -7,10 +7,9 @@ Today's hot.
 This is for the Final Project of React Fundamentals Course
 ========
 
-#### For more information on React Training, [click here](http://reacttraining.com/online)
 
 ## Objective
-Build a functioning Weather app using the [Open Weather API](http://openweathermap.org/api). The end result of this project can be found [HERE](http://reacttraining.github.io/react-fundamentals-curriculum).
+Build a functioning Weather app using the [Open Weather API](http://openweathermap.org/api). The end result of this project can be found [HERE](http://reacttraining.github.io/react-fundamentals-curriculum). My End Result is hosted [here](https://50degrees.netlify.com/)
 
 
 ## Step 0: Examine the Final Product
@@ -120,5 +119,5 @@ The final /detail route looks like this.
 
 ## Step 11: Build for production and host it
 
-- [ ] Configure your webpack.config.js settings to build for production.
-- [ ] Host your app.
+- [x] Configure your webpack.config.js settings to build for production.
+- [x] Host your app. (Hosted at [https://50degrees.netlify.com/](https://50degrees.netlify.com/))
